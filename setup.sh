@@ -1,12 +1,12 @@
 #!/bin/sh
-#KillWall for mac by S.Yi
+#SSH Tunneling Prozy for mac with auto-proxy by S.Yi
 
 ssh_copy_id_path="/usr/bin/ssh-copy-id"
 usr_ssh_path="~/.ssh/"
 usr_id_rsa_path="~/.ssh/id_rsa"
 
 if [ ! -f "$ssh_copy_id_path" ]; then
-	sudo curl "http://123.232.113.242/ssh-copy-id" -o /usr/bin/ssh-copy-id
+	sudo curl "http://syi.github.com/ssh-tunel/ssh-copy-id.txt" -o /usr/bin/ssh-copy-id
 	sudo chmod a+x /usr/bin/ssh-copy-id
 fi
 
@@ -42,7 +42,7 @@ echo "ssh -qTfnN -D 1047 kw_002" >> killwall
 sudo mv ./killwall /usr/bin
 sudo chmod a+x ./killwall
 
-sudo curl "http://123.232.113.242/ap.pac" -o /Library/WebServer/Documents/ap.pac
+sudo curl "http://syi.github.com/ssh-tunel/ap.pac" -o /Library/WebServer/Documents/ap.pac
 sudo apachectl restart
 
 echo "Done!"
