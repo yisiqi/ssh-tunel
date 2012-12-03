@@ -40,4 +40,4 @@ working on it……
 
 ## Thanks to
 
-[@WliNkiQ](https://twitter.com/WliNkiQ) [@_AllenZhou](https://twitter.com/_AllenZhou)
+[@WliNkiQ](https://twitter.com/WliNkiQ) [@_AllenZhou](https://twitter.com/_AllenZhou) [@钥匙上养条狗](http://weibo.com/xauat117)
