@@ -2,7 +2,7 @@
 
 ### Install
 
-1. Download [ssh-tunl](https://github.com/syi/ssh-tunel/archive/master.zip) and copy **`./OS X/setup.sh`** to your user directory.
+1. Download [SSH Tunel](https://github.com/syi/ssh-tunel/zipball/master) and copy **`./OS X/setup.sh`** to your user directory.
 2. Open Terminal App.
 3. Run commands like this:
 
