@@ -41,26 +41,30 @@
       <section>
         <h1>About SSH Tunel</h1>
 
+<p>For more information on SSH Tunel, please visit <a href="http://syi.github.com/ssh-tunel/">http://syi.github.com/ssh-tunel/</a>.</p>
+
+<blockquote>
 <p>Choose the version to your Operating-System. There is another <code>README.md</code> document to guide you finish the installation.</p>
+</blockquote>
 
 <h2>for Mac users</h2>
 
 <h3>Install</h3>
 
 <ol>
-<li>Download <a href="https://github.com/syi/ssh-tunel/archive/master.zip">ssh-tunl</a> and copy <strong><code>./OS X/setup.sh</code></strong> to your user directory.</li>
+<li>Download <a href="https://github.com/syi/ssh-tunel/zipball/master">SSH Tunel</a> and copy <strong><code>./OS X/setup.sh</code></strong> to your user directory.</li>
 <li>Open Terminal App.</li>
 <li>Run commands like this:</li>
 </ol><pre><code>cd ~/
 chmod a+x ./setup.sh
-./setup.sh
+./setup.sh username ssh.server.url[:port]
 </code></pre>
 
 <p>Until the terminal display <code>Done!</code>, you have installed SSH Tunel successfully.</p>
 
 <h3>Use with terminal</h3>
 
-<p>Open Terminal App, and type like this: <strong><code>killwall username ssh.server.url[:port]</code></strong></p>
+<p>Open Terminal App, and type like this: <strong><code>killwall</code></strong></p>
 
 <h3>Make a Service with Automator</h3>
 
