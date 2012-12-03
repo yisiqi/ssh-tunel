@@ -1,19 +1,3 @@
-## How to use
+# About SSH Tunel
 
-### install
-
-1. Download ssh-tunl, copy `setup.sh` to user director.
-2. Open Terminal App.
-3. run command:
-
-```
-cd ~/
-chmod a+x ./setup.sh
-./setup.sh
-
-```
-until done.
-
-### use
-
-Open Terminal App, and type: `killwall`
+Choose the version for your Operating-System. There is another `README.md` document to guiding you finish the installing.
