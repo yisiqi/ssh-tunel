@@ -15,13 +15,13 @@ For more information on SSH Tunel, please visit <http://syi.github.com/ssh-tunel
 ```
 cd ~/
 chmod a+x ./setup.sh
-./setup.sh
+./setup.sh username ssh.server.url[:port]
 ```
 Until the terminal display `Done!`, you have installed SSH Tunel successfully.
 
 ### Use with terminal
 
-Open Terminal App, and type like this: **`killwall username ssh.server.url[:port]`**
+Open Terminal App, and type like this: **`killwall`**
 
 ### Make a Service with Automator
 
