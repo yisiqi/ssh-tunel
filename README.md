@@ -1,6 +1,8 @@
 # About SSH Tunel
 
-Choose the version to your Operating-System. There is another `README.md` document to guide you finish the installation.
+For more information on SSH Tunel, please visit <http://syi.github.com/ssh-tunel/>.
+
+> Choose the version to your Operating-System. There is another `README.md` document to guide you finish the installation.
 
 ## for Mac users
 
