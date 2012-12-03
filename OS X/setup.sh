@@ -13,9 +13,9 @@ fi
 
 
 ssh_copy_id_file="/usr/bin/ssh-copy-id"
-usr_ssh_path="~/.ssh/"
-usr_ssh_config_file="~/.ssh/config"
-usr_id_rsa_file="~/.ssh/id_rsa"
+usr_ssh_path="$HOME/.ssh/"
+usr_ssh_config_file="$HOME/.ssh/config"
+usr_id_rsa_file="$HOME/.ssh/id_rsa"
 usr_bin_killwall_file="/usr/bin/killwall"
 kill_tmp_file="./_tmp_killwall_by_syi"
 
@@ -24,7 +24,7 @@ if [ ! -f "$ssh_copy_id_file" ]; then
 	sudo chmod a+x "$ssh_copy_id_file"
 fi
 
-cd ~
+cd $HOME
 
 if [ ! -d "$usr_ssh_path" ]; then
 	mkdir "$usr_ssh_path"
