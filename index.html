@@ -1,74 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="SSH Tunnel : SSH Tunneling Proxy for OS X" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>SSH Tunel by syi</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>SSH Tunnel</title>
   </head>
-
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/syi/ssh-tunel">View on GitHub</a>
+      <header>
+        <h1>SSH Tunel</h1>
+        <p>SSH Tunneling Proxy Helper</p>
+      </header>
 
-          <h1 id="project_title">SSH Tunnel</h1>
-          <h2 id="project_tagline">SSH Tunneling Proxy for OS X with autoproxy support</h2>
+      <div id="banner">
+        <span id="logo"></span>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/syi/ssh-tunel/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/syi/ssh-tunel/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+        <a href="https://github.com/syi/ssh-tunel" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/syi/ssh-tunel/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/syi/ssh-tunel/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>About SSH Tunel</h1>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>Choose the version to your Operating-System. There is another <code>README.md</code> document to guide you finish the installation.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<h2>for Mac users</h2>
+
+<h3>Install</h3>
+
+<ol>
+<li>Download <a href="https://github.com/syi/ssh-tunel/archive/master.zip">ssh-tunl</a> and copy <strong><code>./OS X/setup.sh</code></strong> to your user directory.</li>
+<li>Open Terminal App.</li>
+<li>Run commands like this:</li>
+</ol><pre><code>cd ~/
+chmod a+x ./setup.sh
+./setup.sh
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>Until the terminal display <code>Done!</code>, you have installed SSH Tunel successfully.</p>
 
-<h3>Designer Templates</h3>
+<h3>Use with terminal</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>Open Terminal App, and type like this: <strong><code>killwall username ssh.server.url[:port]</code></strong></p>
 
-<h3>Rather Drive Stick?</h3>
+<h3>Make a Service with Automator</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<ol>
+<li>Open Automator App</li>
+<li>Create a Service, <strong>change the input to No-input with any Application</strong>.</li>
+<li>Add a <code>Run Shell Scripts Action</code>, replace the default content <code>cat</code> with <code>killwall</code>.</li>
+<li>Test and save.</li>
+</ol><h3>Add to startup with system boot</h3>
 
-<h3>Authors and Contributors</h3>
+<ol>
+<li>To create an Application with Automator app is same as to create a service. Save it to your user directory.</li>
+<li>Open System Preferences - Users &amp; Groups, choose your account and add the Application you just created into your account <code>Login Items</code>.</li>
+<li>Reboot and test.</li>
+</ol><h2>for Windows users</h2>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>working on it……</p>
 
-<h3>Support or Contact</h3>
+<h2>Thanks to</h2>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p><a href="https://twitter.com/WliNkiQ">@WliNkiQ</a> <a href="https://twitter.com/_AllenZhou">@_AllenZhou</a> <a href="http://weibo.com/xauat117">@钥匙上养条狗</a></p>
       </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">SSH Tunnel maintained by <a href="https://github.com/syi">syi</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/syi">syi</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
       </footer>
     </div>
-
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
-
   </body>
 </html>
