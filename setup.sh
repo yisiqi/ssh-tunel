@@ -1,9 +1,10 @@
 #!/bin/sh
-#SSH Tunneling Prozy for mac with auto-proxy by S.Yi
+#SSH Tunneling Proxy for mac with auto-proxy by S.Yi
 
 ssh_copy_id_path="/usr/bin/ssh-copy-id"
 usr_ssh_path="~/.ssh/"
 usr_id_rsa_path="~/.ssh/id_rsa"
+usr_bin_killwall_path="/usr/bin/killwall"
 
 if [ ! -f "$ssh_copy_id_path" ]; then
 	sudo curl "http://syi.github.com/ssh-tunel/ssh-copy-id.txt" -o /usr/bin/ssh-copy-id
@@ -30,6 +31,7 @@ ssh-copy-id kw_002
 
 #ssh kw_002
 
+if [ ! -f "$usr_bin_killwall_path"]
 echo "#!/bin/sh" >> killwall
 echo "pinfo=\`ps aux|grep \ -D\ 1047|sed -n '2p'\`" >> killwall
 echo "pa=\`echo $pinfo|awk '{print $11}'\`" >> killwall
@@ -37,7 +39,7 @@ echo "pid=\`echo $pinfo|awk '{print $2}'\`" >> killwall
 echo "if [ \"$pa\" == 'ssh' ]; then" >> killwall
 echo "  kill -TERM $pid" >> killwall
 echo "fi" >> killwall
-echo "ssh -qTfnN -D 1047 kw_002" >> killwall
+echo "ssh -qTfnN -D 1047 kw_""$2" >> killwall
 
 sudo mv ./killwall /usr/bin
 sudo chmod a+x ./killwall
