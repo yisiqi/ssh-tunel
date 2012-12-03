@@ -1,6 +1,6 @@
 # About SSH Tunel
 
-Choose the version for your Operating-System. There is another `README.md` document to guiding you finish the installing.
+Choose the version to your Operating-System. There is another `README.md` document to guide you finish the installation.
 
 ## for Mac users
 
@@ -30,10 +30,14 @@ Open Terminal App, and type like this: **`killwall username ssh.server.url[:port
 
 ### Add to startup with system boot
 
-1. Create an Application with Automator app as same to create a service. Save it to your user directory.
-2. Open System Preferences - Users & Groups, choose your account and add the Application you just create into your account `Login Items`.
+1. To create an Application with Automator app is same as to create a service. Save it to your user directory.
+2. Open System Preferences - Users & Groups, choose your account and add the Application you just created into your account `Login Items`.
 3. Reboot and test.
 
 ## for Windows users
 
 working on it……
+
+## Thanks to
+
+[@WliNkiQ](https://twitter.com/WliNkiQ) 
